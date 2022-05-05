@@ -1,7 +1,6 @@
 import { strictEquals } from './strictEquals.js';
 
 //TESTING FUNCTION
-
 console.log(`El resultado de strictEquals(1, 1) es --> ${strictEquals(1, 1)}`);
 console.log(
     `El resultado de strictEquals(NaN, NaN) es --> ${strictEquals(NaN, NaN)}`
@@ -33,3 +32,5 @@ console.log(
         'oil'
     )}`
 );
+
+document.body.innerHTML = strictEquals(1, 1);
