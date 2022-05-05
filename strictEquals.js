@@ -1,4 +1,4 @@
-function strictEquals(a, b) {
+export function strictEquals(a, b) {
     if (
         (Object.is(0, b) && Object.is(a, -0)) ||
         (Object.is(a, 0) && Object.is(-0, b))
