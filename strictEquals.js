@@ -1,6 +1,8 @@
-import { add } from './test.js';
-function strictEquals(a, b) {}
-let a = 23;
-if (a) {
-    console.log(add(a, 10));
+function strictEquals(a, b) {
+    if (Object.is(a, -0) || Object.is(-0, b)) {
+        return true;
+    } else if (Object.is(NaN, NaN)) {
+        return false;
+    }
+    return Object.is(a, b);
 }
